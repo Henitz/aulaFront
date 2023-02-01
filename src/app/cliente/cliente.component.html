@@ -1,0 +1,24 @@
+<!-- <p>cliente works!</p> -->
+<form (ngSubmit)="save()" action="">
+  <div class="form-group">
+    <div class="row">
+      <div class="col">
+        <label>Nome</label>
+        <input type="text" id="nome" class="form-control" required [(ngModel)]="cliente.nome" name="nome"
+          #nome="ngModel" placeholder="Nome Completo">
+      </div>
+      <div class="col">
+        <label>Funcionários</label>
+        <input type="text" id="quantidadeFuncionarios" class="form-control" required placeholder="Quantidade"
+          [(ngModel)]="cliente.quantidadeFuncionarios" name="quantidadeFuncionarios" #quantidadeFuncionarios="ngModel">
+      </div>
+    </div>
+
+    <!-- <app-dropdown [cliente]="cliente"></app-dropdown> -->
+
+    <button type="submit" [disabled]="nome.invalid" class="btn btn-light">
+      <fa-icon [icon]="faSave"></fa-icon> Salvar Cliente
+    </button>
+
+  </div>
+</form>
