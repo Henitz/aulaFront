@@ -8,6 +8,22 @@
           #nome="ngModel" placeholder="Nome Completo">
       </div>
       <div class="col">
+        <label>Cidade</label>
+        <input type="text" id="cidade" class="form-control" required [(ngModel)]="cliente.cidade" name="nome"
+          #nome="ngModel" placeholder="Cidade">
+      </div>
+      <div class="col">
+        <label>Estado</label>
+        <input type="text" id="estado" class="form-control" required [(ngModel)]="cliente.estado" name="nome"
+          #nome="ngModel" placeholder="Estado">
+      </div>
+      <div class="col">
+        <label>País</label>
+        <input type="text" id="pais" class="form-control" required [(ngModel)]="cliente.pais" name="nome"
+          #nome="ngModel" placeholder="País">
+      </div>
+
+      <div class="col">
         <label>Funcionários</label>
         <input type="text" id="quantidadeFuncionarios" class="form-control" required placeholder="Quantidade"
           [(ngModel)]="cliente.quantidadeFuncionarios" name="quantidadeFuncionarios" #quantidadeFuncionarios="ngModel">
